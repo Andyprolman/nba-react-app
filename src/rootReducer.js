@@ -5,4 +5,6 @@ import userReducer from './components/Users/userReducer'
 const rootReducer = combineReducers({
   addUser: addUserResucer,
   user: userReducer
-})
+}) 
+
+export default rootReducer;
