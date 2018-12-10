@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import addUserReducer from './components/AddUser/addUserReducer';
-import userReducer from './components/Users/usersReducer'
+import playerOneReducer from './components/PlayerOne/playerOneReducer';
+import comparisonReducer from './components/Comparison/comparisonReducer';
+import playerTwoReducer from './components/PlayerTwo/playerTwoReducer';
 
 const rootReducer = combineReducers({
-  addUser: addUserReducer,
-  user: userReducer
+  playerOne: playerOneReducer,
+  comparison: comparisonReducer,
+  playerTwo: playerTwoReducer
 }) 
 
 export default rootReducer;
