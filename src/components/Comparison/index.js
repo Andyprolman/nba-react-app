@@ -3,8 +3,10 @@ import Comparison from './comparison';
 
 function mapStateToProps(store) {
   return {
-    drivingOne: store.playerOne.driving,
-    drivingTwo: store.playerTwo.driving
+    drivingOne: store.playerOne.offense.driving,
+    drivingTwo: store.playerTwo.offense.driving,
+    finishingOne: store.playerOne.offense.finishing,
+    finishingTwo: store.playerTwo.offense.finishing
   }
 }
 

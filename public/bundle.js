@@ -26229,7 +26229,9 @@ function (_React$Component) {
     value: function render() {
       var _this$props = this.props,
           drivingOne = _this$props.drivingOne,
-          drivingTwo = _this$props.drivingTwo;
+          drivingTwo = _this$props.drivingTwo,
+          finishingOne = _this$props.finishingOne,
+          finishingTwo = _this$props.finishingTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         style: {
@@ -26239,7 +26241,7 @@ function (_React$Component) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Comparison")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Offense:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingTwo))))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Offense:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Finishing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingTwo))))))));
     }
   }]);
 
@@ -26295,8 +26297,10 @@ __webpack_require__.r(__webpack_exports__);
 
 function mapStateToProps(store) {
   return {
-    drivingOne: store.playerOne.driving,
-    drivingTwo: store.playerTwo.driving
+    drivingOne: store.playerOne.offense.driving,
+    drivingTwo: store.playerTwo.offense.driving,
+    finishingOne: store.playerOne.offense.finishing,
+    finishingTwo: store.playerTwo.offense.finishing
   };
 }
 
@@ -26478,7 +26482,10 @@ var initialState = {
   age: '',
   contract: '',
   agent: '',
-  driving: ''
+  offense: {
+    driving: '',
+    finishing: ''
+  }
 };
 
 var playerOneReducer = function playerOneReducer() {
@@ -26505,7 +26512,10 @@ var playerOneReducer = function playerOneReducer() {
           age: json[index].Age,
           contract: json[index].Contract,
           agent: json[index].Agent,
-          driving: json[index].Driving
+          offense: {
+            driving: json[index].Driving,
+            finishing: json[index].Finishing
+          }
         });
       }
 
@@ -26695,7 +26705,10 @@ var initialState = {
   age: '',
   contract: '',
   agent: '',
-  driving: ''
+  offense: {
+    driving: '',
+    finishing: ''
+  }
 };
 
 var playerTwoReducer = function playerTwoReducer() {
@@ -26722,7 +26735,10 @@ var playerTwoReducer = function playerTwoReducer() {
           age: json[index].Age,
           contract: json[index].Contract,
           agent: json[index].Agent,
-          driving: json[index].Driving
+          offense: {
+            driving: json[index].Driving,
+            finishing: json[index].Finishing
+          }
         });
       }
 

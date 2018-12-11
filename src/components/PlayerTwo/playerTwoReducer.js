@@ -6,7 +6,10 @@ const initialState = {
   age: '',
   contract: '',
   agent: '',
-  driving: ''
+  offense: {
+    driving: '',
+    finishing: '', 
+  }
 }
 
 
@@ -30,7 +33,10 @@ const playerTwoReducer = (state = initialState, action) => {
         age: json[index].Age,
         contract: json[index].Contract,
         agent: json[index].Agent,
-        driving: json[index].Driving
+        offense: {
+          driving: json[index].Driving,
+          finishing: json[index].Finishing
+        }
       }
     }
     default: {

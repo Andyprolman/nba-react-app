@@ -6,7 +6,10 @@ class Comparison extends React.Component {
   }
 
   render() {
-    const { drivingOne, drivingTwo } = this.props;
+    const { 
+      drivingOne, drivingTwo,
+      finishingOne, finishingTwo
+     } = this.props;
     return (
       <div>
         <div className='card' style={{textAlign: 'center'}}>
@@ -22,6 +25,11 @@ class Comparison extends React.Component {
                     <td>{drivingOne}</td>
                     <td>Driving</td>
                     <td>{drivingTwo}</td>
+                  </tr>
+                  <tr>
+                    <td>{finishingOne}</td>
+                    <td>Finishing</td>
+                    <td>{finishingTwo}</td>
                   </tr>
                 </tbody>
               </table>
