@@ -10,6 +10,16 @@ const initialState = {
   offense: {
     driving: '',
     finishing: '', 
+    foulDrawing: '',
+    offensiveReb: '',
+    otmshooting: '',
+    playmaking: '',
+    pandrHandler: '',
+    pandrBig: '',
+    postScoring: '',
+    pullUpShooting: '',
+    spacer: '',
+    spotUpShooting: ''
   }
   
 }
@@ -36,7 +46,17 @@ const playerOneReducer = (state = initialState, action) => {
         agent: json[index].Agent,
         offense: {
           driving: json[index].Driving,
-          finishing: json[index].Finishing
+          finishing: json[index].Finishing,
+          foulDrawing: json[index].FoulDrawing,
+          offensiveReb: json[index].OffensiveRebounding,
+          otmShooting: json[index].OnTheMoveShooting,
+          playmaking: json[index].Playmaking,
+          pandrHandler: json[index].OffPickAndRollHandler,
+          pandrBig: json[index].OffPickAndRollBig,
+          postScoring: json[index].PostScoring,
+          pullUpShooting: json[index].PullUpShooting,
+          spacer: json[index].SpaceCreation,
+          spotUpShooting: json[index].SpotUpShooting
         }
 
       }
