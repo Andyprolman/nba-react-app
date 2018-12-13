@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Comparison from './comparison';
+import Offense from './offense';
 
 function mapStateToProps(store) {
   return {
@@ -30,4 +30,4 @@ function mapStateToProps(store) {
   }
 }
 
-export default connect(mapStateToProps)(Comparison);
+export default connect(mapStateToProps)(Offense);

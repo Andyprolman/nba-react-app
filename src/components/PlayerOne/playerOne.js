@@ -1,5 +1,5 @@
 import React from 'react';
-import { changePlayerOne, selectPlayerOne } from './playerOneActions'
+import { selectPlayerOne } from './playerOneActions'
 
 const json = require('/Users/andrew/nba-react-app/src/playerData.json');
 
@@ -7,18 +7,12 @@ class PlayerOne extends React.Component {
   constructor(props) {
     super(props)
 
-    this.changePlayerOne = this.changePlayerOne.bind(this);
     this.selectPlayerOne = this.selectPlayerOne.bind(this);
   }
 
-  changePlayerOne(e){
+  selectPlayerOne(e){
     const { dispatch } = this.props;
-    dispatch(changePlayerOne(e.target.value))
-  }
-
-  selectPlayerOne(){
-    const { dispatch, playerOne } = this.props;
-    dispatch(selectPlayerOne(playerOne))
+    dispatch(selectPlayerOne(e.target.value))
   }
 
   render() {
@@ -28,13 +22,12 @@ class PlayerOne extends React.Component {
         <div className='card'>
           <div className='card-header'>
             <h4>Player One</h4>
-            <select onChange={this.changePlayerOne}>
+            <select onChange={this.selectPlayerOne}>
               <option>Select a player</option>
               {json.map(player => (
                 <option key={player.Player}>{player.Player}</option>
                 ))}
             </select>
-                <button className='btn btn-primary' onClick={this.selectPlayerOne}>Select</button>
           </div>
           <div className='card-body'>
             <table>

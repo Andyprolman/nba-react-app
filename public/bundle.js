@@ -26117,7 +26117,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _rootStore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rootStore */ "./src/rootStore.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _components_PlayerOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/PlayerOne */ "./src/components/PlayerOne/index.js");
-/* harmony import */ var _components_Comparison__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Comparison */ "./src/components/Comparison/index.js");
+/* harmony import */ var _components_Comparison_comparison__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Comparison/comparison */ "./src/components/Comparison/comparison.js");
 /* harmony import */ var _components_PlayerTwo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/PlayerTwo */ "./src/components/PlayerTwo/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26168,7 +26168,7 @@ function (_React$Component) {
         className: "col-md-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PlayerOne__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Comparison__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Comparison_comparison__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PlayerTwo__WEBPACK_IMPORTED_MODULE_5__["default"], null)))));
     }
@@ -26186,6 +26186,111 @@ function (_React$Component) {
 /*!*************************************************!*\
   !*** ./src/components/Comparison/comparison.js ***!
   \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Offense__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Offense */ "./src/components/Offense/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var Comparison =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Comparison, _React$Component);
+
+  function Comparison() {
+    _classCallCheck(this, Comparison);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Comparison).apply(this, arguments));
+  }
+
+  _createClass(Comparison, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Offense__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+    }
+  }]);
+
+  return Comparison;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Comparison);
+
+/***/ }),
+
+/***/ "./src/components/Offense/index.js":
+/*!*****************************************!*\
+  !*** ./src/components/Offense/index.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _offense__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./offense */ "./src/components/Offense/offense.js");
+
+
+
+function mapStateToProps(store) {
+  return {
+    drivingOne: store.playerOne.offense.driving,
+    drivingTwo: store.playerTwo.offense.driving,
+    finishingOne: store.playerOne.offense.finishing,
+    finishingTwo: store.playerTwo.offense.finishing,
+    foulDrawingOne: store.playerOne.offense.foulDrawing,
+    foulDrawingTwo: store.playerTwo.offense.foulDrawing,
+    offensiveRebOne: store.playerOne.offense.offensiveReb,
+    offensiveRebTwo: store.playerTwo.offense.offensiveReb,
+    otmShootingOne: store.playerOne.offense.otmShooting,
+    otmShootingTwo: store.playerTwo.offense.otmShooting,
+    playmakingOne: store.playerOne.offense.playmaking,
+    playmakingTwo: store.playerTwo.offense.playmaking,
+    pandrHandlerOne: store.playerOne.offense.pandrHandler,
+    pandrHandlerTwo: store.playerTwo.offense.pandrHandler,
+    pandrBigOne: store.playerOne.offense.pandrBig,
+    pandrBigTwo: store.playerTwo.offense.pandrBig,
+    postScoringOne: store.playerOne.offense.postScoring,
+    postScoringTwo: store.playerTwo.offense.postScoring,
+    pullUpShootingOne: store.playerOne.offense.pullUpShooting,
+    pullUpShootingTwo: store.playerTwo.offense.pullUpShooting,
+    spacerOne: store.playerOne.offense.spacer,
+    spacerTwo: store.playerTwo.offense.spacer,
+    spotUpShootingOne: store.playerOne.offense.spotUpShooting,
+    spotUpShootingTwo: store.playerTwo.offense.spotUpShooting
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps)(_offense__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/Offense/offense.js":
+/*!*******************************************!*\
+  !*** ./src/components/Offense/offense.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26213,18 +26318,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Comparison =
+var Offense =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Comparison, _React$Component);
+  _inherits(Offense, _React$Component);
 
-  function Comparison(props) {
-    _classCallCheck(this, Comparison);
+  function Offense(props) {
+    _classCallCheck(this, Offense);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Comparison).call(this, props));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Offense).call(this, props));
   }
 
-  _createClass(Comparison, [{
+  _createClass(Offense, [{
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -26265,17 +26370,17 @@ function (_React$Component) {
     }
   }]);
 
-  return Comparison;
+  return Offense;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Comparison);
+/* harmony default export */ __webpack_exports__["default"] = (Offense);
 
 /***/ }),
 
-/***/ "./src/components/Comparison/comparisonReducer.js":
-/*!********************************************************!*\
-  !*** ./src/components/Comparison/comparisonReducer.js ***!
-  \********************************************************/
+/***/ "./src/components/Offense/offenseReducer.js":
+/*!**************************************************!*\
+  !*** ./src/components/Offense/offenseReducer.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26298,53 +26403,6 @@ var comparisonReducer = function comparisonReducer() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (comparisonReducer);
-
-/***/ }),
-
-/***/ "./src/components/Comparison/index.js":
-/*!********************************************!*\
-  !*** ./src/components/Comparison/index.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _comparison__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./comparison */ "./src/components/Comparison/comparison.js");
-
-
-
-function mapStateToProps(store) {
-  return {
-    drivingOne: store.playerOne.offense.driving,
-    drivingTwo: store.playerTwo.offense.driving,
-    finishingOne: store.playerOne.offense.finishing,
-    finishingTwo: store.playerTwo.offense.finishing,
-    foulDrawingOne: store.playerOne.offense.foulDrawing,
-    foulDrawingTwo: store.playerTwo.offense.foulDrawing,
-    offensiveRebOne: store.playerOne.offense.offensiveReb,
-    offensiveRebTwo: store.playerTwo.offense.offensiveReb,
-    otmShootingOne: store.playerOne.offense.otmShooting,
-    otmShootingTwo: store.playerTwo.offense.otmShooting,
-    playmakingOne: store.playerOne.offense.playmaking,
-    playmakingTwo: store.playerTwo.offense.playmaking,
-    pandrHandlerOne: store.playerOne.offense.pandrHandler,
-    pandrHandlerTwo: store.playerTwo.offense.pandrHandler,
-    pandrBigOne: store.playerOne.offense.pandrBig,
-    pandrBigTwo: store.playerTwo.offense.pandrBig,
-    postScoringOne: store.playerOne.offense.postScoring,
-    postScoringTwo: store.playerTwo.offense.postScoring,
-    pullUpShootingOne: store.playerOne.offense.pullUpShooting,
-    pullUpShootingTwo: store.playerTwo.offense.pullUpShooting,
-    spacerOne: store.playerOne.offense.spacer,
-    spacerTwo: store.playerTwo.offense.spacer,
-    spotUpShootingOne: store.playerOne.offense.spotUpShooting,
-    spotUpShootingTwo: store.playerTwo.offense.spotUpShooting
-  };
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps)(_comparison__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
@@ -26422,47 +26480,35 @@ function (_React$Component) {
     _classCallCheck(this, PlayerOne);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(PlayerOne).call(this, props));
-    _this.changePlayerOne = _this.changePlayerOne.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.selectPlayerOne = _this.selectPlayerOne.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(PlayerOne, [{
-    key: "changePlayerOne",
-    value: function changePlayerOne(e) {
-      var dispatch = this.props.dispatch;
-      dispatch(Object(_playerOneActions__WEBPACK_IMPORTED_MODULE_1__["changePlayerOne"])(e.target.value));
-    }
-  }, {
     key: "selectPlayerOne",
-    value: function selectPlayerOne() {
-      var _this$props = this.props,
-          dispatch = _this$props.dispatch,
-          playerOne = _this$props.playerOne;
-      dispatch(Object(_playerOneActions__WEBPACK_IMPORTED_MODULE_1__["selectPlayerOne"])(playerOne));
+    value: function selectPlayerOne(e) {
+      var dispatch = this.props.dispatch;
+      dispatch(Object(_playerOneActions__WEBPACK_IMPORTED_MODULE_1__["selectPlayerOne"])(e.target.value));
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$props2 = this.props,
-          team = _this$props2.team,
-          age = _this$props2.age,
-          contract = _this$props2.contract,
-          agent = _this$props2.agent;
+      var _this$props = this.props,
+          team = _this$props.team,
+          age = _this$props.age,
+          contract = _this$props.contract,
+          agent = _this$props.agent;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Player One"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        onChange: this.changePlayerOne
+        onChange: this.selectPlayerOne
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Select a player"), json.map(function (player) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
           key: player.Player
         }, player.Player);
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-primary",
-        onClick: this.selectPlayerOne
-      }, "Select")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", age)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", contract)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", agent)))))));
     }
@@ -26479,19 +26525,12 @@ function (_React$Component) {
 /*!******************************************************!*\
   !*** ./src/components/PlayerOne/playerOneActions.js ***!
   \******************************************************/
-/*! exports provided: changePlayerOne, selectPlayerOne */
+/*! exports provided: selectPlayerOne */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changePlayerOne", function() { return changePlayerOne; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectPlayerOne", function() { return selectPlayerOne; });
-var changePlayerOne = function changePlayerOne(player) {
-  return {
-    type: 'CHANGE_PLAYER_ONE',
-    payload: player
-  };
-};
 var selectPlayerOne = function selectPlayerOne(player) {
   return {
     type: 'SELECT_PLAYER_ONE',
@@ -26545,19 +26584,13 @@ var playerOneReducer = function playerOneReducer() {
       payload = action.payload;
 
   switch (type) {
-    case 'CHANGE_PLAYER_ONE':
-      {
-        return _objectSpread({}, state, {
-          playerOne: payload
-        });
-      }
-
     case 'SELECT_PLAYER_ONE':
       {
         var index = json.findIndex(function (item) {
           return item.Player == payload;
         });
         return _objectSpread({}, state, {
+          playerOne: payload,
           team: json[index].Team,
           age: json[index].Age,
           contract: json[index].Contract,
@@ -26664,48 +26697,36 @@ function (_React$Component) {
     _classCallCheck(this, PlayerTwo);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(PlayerTwo).call(this, props));
-    _this.changePlayerTwo = _this.changePlayerTwo.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.selectPlayerTwo = _this.selectPlayerTwo.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(PlayerTwo, [{
-    key: "changePlayerTwo",
-    value: function changePlayerTwo(e) {
-      var dispatch = this.props.dispatch;
-      dispatch(Object(_playerTwoActions__WEBPACK_IMPORTED_MODULE_1__["changePlayerTwo"])(e.target.value));
-    }
-  }, {
     key: "selectPlayerTwo",
-    value: function selectPlayerTwo() {
-      var _this$props = this.props,
-          dispatch = _this$props.dispatch,
-          playerTwo = _this$props.playerTwo;
-      dispatch(Object(_playerTwoActions__WEBPACK_IMPORTED_MODULE_1__["selectPlayerTwo"])(playerTwo));
+    value: function selectPlayerTwo(e) {
+      var dispatch = this.props.dispatch;
+      dispatch(Object(_playerTwoActions__WEBPACK_IMPORTED_MODULE_1__["selectPlayerTwo"])(e.target.value));
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$props2 = this.props,
-          playerTwo = _this$props2.playerTwo,
-          team = _this$props2.team,
-          age = _this$props2.age,
-          contract = _this$props2.contract,
-          agent = _this$props2.agent;
+      var _this$props = this.props,
+          playerTwo = _this$props.playerTwo,
+          team = _this$props.team,
+          age = _this$props.age,
+          contract = _this$props.contract,
+          agent = _this$props.agent;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " Player Two"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        onChange: this.changePlayerTwo
+        onChange: this.selectPlayerTwo
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Select a player"), json.map(function (player) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
           key: player.Player
         }, player.Player);
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-primary",
-        onClick: this.selectPlayerTwo
-      }, "Select")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", age, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", contract, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", agent, " ")))))));
     }
@@ -26722,19 +26743,12 @@ function (_React$Component) {
 /*!******************************************************!*\
   !*** ./src/components/PlayerTwo/playerTwoActions.js ***!
   \******************************************************/
-/*! exports provided: changePlayerTwo, selectPlayerTwo */
+/*! exports provided: selectPlayerTwo */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changePlayerTwo", function() { return changePlayerTwo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectPlayerTwo", function() { return selectPlayerTwo; });
-var changePlayerTwo = function changePlayerTwo(player) {
-  return {
-    type: 'CHANGE_PLAYER_TWO',
-    payload: player
-  };
-};
 var selectPlayerTwo = function selectPlayerTwo(player) {
   return {
     type: 'SELECT_PLAYER_TWO',
@@ -26788,19 +26802,13 @@ var playerTwoReducer = function playerTwoReducer() {
       payload = action.payload;
 
   switch (type) {
-    case 'CHANGE_PLAYER_TWO':
-      {
-        return _objectSpread({}, state, {
-          playerTwo: payload
-        });
-      }
-
     case 'SELECT_PLAYER_TWO':
       {
         var index = json.findIndex(function (item) {
           return item.Player == payload;
         });
         return _objectSpread({}, state, {
+          playerTwo: payload,
           team: json[index].Team,
           age: json[index].Age,
           contract: json[index].Contract,
@@ -26876,7 +26884,7 @@ module.exports = [{"Team":"SAC","Player":"Deyonta Davis","Salary":"","PrefPos1":
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _components_PlayerOne_playerOneReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/PlayerOne/playerOneReducer */ "./src/components/PlayerOne/playerOneReducer.js");
-/* harmony import */ var _components_Comparison_comparisonReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Comparison/comparisonReducer */ "./src/components/Comparison/comparisonReducer.js");
+/* harmony import */ var _components_Offense_offenseReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Offense/offenseReducer */ "./src/components/Offense/offenseReducer.js");
 /* harmony import */ var _components_PlayerTwo_playerTwoReducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/PlayerTwo/playerTwoReducer */ "./src/components/PlayerTwo/playerTwoReducer.js");
 
 
@@ -26884,7 +26892,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   playerOne: _components_PlayerOne_playerOneReducer__WEBPACK_IMPORTED_MODULE_1__["default"],
-  comparison: _components_Comparison_comparisonReducer__WEBPACK_IMPORTED_MODULE_2__["default"],
+  offense: _components_Offense_offenseReducer__WEBPACK_IMPORTED_MODULE_2__["default"],
   playerTwo: _components_PlayerTwo_playerTwoReducer__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (rootReducer);

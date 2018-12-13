@@ -2,7 +2,7 @@ import React from 'react';
 import store from './rootStore'
 import { Provider } from 'react-redux'
 import PlayerOne from './components/PlayerOne'
-import Comparison from './components/Comparison'
+import Comparison from './components/Comparison/comparison'
 import PlayerTwo from './components/PlayerTwo'
 
 class App extends React.Component {
