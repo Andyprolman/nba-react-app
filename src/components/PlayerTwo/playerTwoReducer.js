@@ -27,6 +27,12 @@ const initialState = {
     pandrBig: '',
     postDefense: '',
     rimProtection: ''
+  },
+  mental: {
+    decisionMaking: '',
+    offBallMovement: '',
+    positioning: '',
+    rotations: ''
   }
 }
 
@@ -68,6 +74,13 @@ const playerTwoReducer = (state = initialState, action) => {
           pandrBig: json[index].DefPickAndRollBig,
           postDefense: json[index].PostDefense,
           rimProtection: json[index].RimProtection
+        },
+
+        mental: {
+          decisionMaking: json[index].DecisionMaking,
+          offBallMovement:json[index].OffBallMovement,
+          positioning: json[index].Positioning,
+          rotations: json[index].Rotations
         }
       }
     }
