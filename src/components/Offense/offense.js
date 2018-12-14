@@ -24,11 +24,10 @@ class Offense extends React.Component {
       <div>
         <div className='card' style={{textAlign: 'center'}}>
           <div className='card-header'>
-            <h4>Comparison</h4>
+            <h4>Offense</h4>
           </div>
           <div className='card-body'>
             <div>
-              <h6>Offense:</h6>
               <table>
                 <tbody>
                   <tr>

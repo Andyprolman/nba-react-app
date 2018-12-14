@@ -26194,6 +26194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Offense__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Offense */ "./src/components/Offense/index.js");
+/* harmony import */ var _Defense__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Defense */ "./src/components/Defense/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26215,6 +26216,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Comparison =
 /*#__PURE__*/
 function (_React$Component) {
@@ -26229,7 +26231,7 @@ function (_React$Component) {
   _createClass(Comparison, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Offense__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Offense__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Defense__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -26237,6 +26239,119 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Comparison);
+
+/***/ }),
+
+/***/ "./src/components/Defense/defense.js":
+/*!*******************************************!*\
+  !*** ./src/components/Defense/defense.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Defense =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Defense, _React$Component);
+
+  function Defense(props) {
+    _classCallCheck(this, Defense);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Defense).call(this, props));
+  }
+
+  _createClass(Defense, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          defensiveRebOne = _this$props.defensiveRebOne,
+          defensiveRebTwo = _this$props.defensiveRebTwo,
+          versatilityOne = _this$props.versatilityOne,
+          versatilityTwo = _this$props.versatilityTwo,
+          pandrHandlerOne = _this$props.pandrHandlerOne,
+          pandrHandlerTwo = _this$props.pandrHandlerTwo,
+          pandrBigOne = _this$props.pandrBigOne,
+          pandrBigTwo = _this$props.pandrBigTwo,
+          postDefenseOne = _this$props.postDefenseOne,
+          postDefenseTwo = _this$props.postDefenseTwo,
+          rimProtectionOne = _this$props.rimProtectionOne,
+          rimProtectionTwo = _this$props.rimProtectionTwo;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card",
+        style: {
+          textAlign: 'center'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Defense")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, defensiveRebOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, defensiveRebTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, versatilityOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Versatiltiy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, versatilityTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postDefenseOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Defense"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postDefenseTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rimProtectionOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Rim Protection"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rimProtectionTwo))))));
+    }
+  }]);
+
+  return Defense;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Defense);
+
+/***/ }),
+
+/***/ "./src/components/Defense/index.js":
+/*!*****************************************!*\
+  !*** ./src/components/Defense/index.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _defense__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defense */ "./src/components/Defense/defense.js");
+
+
+
+function mapStateToProps(store) {
+  return {
+    defensiveRebOne: store.playerOne.defense.defensiveReb,
+    defensiveRebTwo: store.playerTwo.defense.defensiveReb,
+    versatilityOne: store.playerOne.defense.versatility,
+    versatilityTwo: store.playerTwo.defense.versatility,
+    pandrHandlerOne: store.playerOne.defense.pandrHandler,
+    pandrHandlerTwo: store.playerTwo.defense.pandrHandler,
+    pandrBigOne: store.playerOne.defense.pandrBig,
+    pandrBigTwo: store.playerTwo.defense.pandrBig,
+    postDefenseOne: store.playerOne.defense.postDefense,
+    postDefenseTwo: store.playerTwo.defense.postDefense,
+    rimProtectionOne: store.playerOne.defense.rimProtection,
+    rimProtectionTwo: store.playerTwo.defense.rimProtection
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps)(_defense__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
@@ -26364,9 +26479,9 @@ function (_React$Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Comparison")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Offense")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Offense:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Finishing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Foul Drawing "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingTwo))))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Finishing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Foul Drawing "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingTwo))))))));
     }
   }]);
 
@@ -26574,6 +26689,14 @@ var initialState = {
     pullUpShooting: '',
     spacer: '',
     spotUpShooting: ''
+  },
+  defense: {
+    defensiveReb: '',
+    versatiltiy: '',
+    pandrHandler: '',
+    pandrBig: '',
+    postDefense: '',
+    rimProtection: ''
   }
 };
 
@@ -26608,6 +26731,14 @@ var playerOneReducer = function playerOneReducer() {
             pullUpShooting: json[index].PullUpShooting,
             spacer: json[index].SpaceCreation,
             spotUpShooting: json[index].SpotUpShooting
+          },
+          defense: {
+            defensiveReb: json[index].DefensiveRebounding,
+            versatility: json[index].DefensiveVersatility,
+            pandrHandler: json[index].DefPickAndRollHandler,
+            pandrBig: json[index].DefPickAndRollBig,
+            postDefense: json[index].PostDefense,
+            rimProtection: json[index].RimProtection
           }
         });
       }
@@ -26792,6 +26923,14 @@ var initialState = {
     pullUpShooting: '',
     spacer: '',
     spotUpShooting: ''
+  },
+  defense: {
+    defensiveReb: '',
+    versatiltiy: '',
+    pandrHandler: '',
+    pandrBig: '',
+    postDefense: '',
+    rimProtection: ''
   }
 };
 
@@ -26826,6 +26965,14 @@ var playerTwoReducer = function playerTwoReducer() {
             pullUpShooting: json[index].PullUpShooting,
             spacer: json[index].SpaceCreation,
             spotUpShooting: json[index].SpotUpShooting
+          },
+          defense: {
+            defensiveReb: json[index].DefensiveRebounding,
+            versatility: json[index].DefensiveVersatility,
+            pandrHandler: json[index].DefPickAndRollHandler,
+            pandrBig: json[index].DefPickAndRollBig,
+            postDefense: json[index].PostDefense,
+            rimProtection: json[index].RimProtection
           }
         });
       }

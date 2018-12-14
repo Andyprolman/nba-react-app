@@ -20,6 +20,14 @@ const initialState = {
     pullUpShooting: '',
     spacer: '',
     spotUpShooting: ''
+  },
+  defense: {
+    defensiveReb: '',
+    versatiltiy: '',
+    pandrHandler: '',
+    pandrBig: '',
+    postDefense: '',
+    rimProtection: ''
   }
   
 }
@@ -52,8 +60,16 @@ const playerOneReducer = (state = initialState, action) => {
           pullUpShooting: json[index].PullUpShooting,
           spacer: json[index].SpaceCreation,
           spotUpShooting: json[index].SpotUpShooting
-        }
+        },
 
+        defense: {
+          defensiveReb: json[index].DefensiveRebounding,
+          versatility: json[index].DefensiveVersatility,
+          pandrHandler: json[index].DefPickAndRollHandler,
+          pandrBig: json[index].DefPickAndRollBig,
+          postDefense: json[index].PostDefense,
+          rimProtection: json[index].RimProtection
+        }
       }
     }
     default: {
