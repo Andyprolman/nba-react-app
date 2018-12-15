@@ -6,14 +6,7 @@ class Defense extends React.Component {
   }
 
   render(){
-    const {
-      defensiveRebOne, defensiveRebTwo,
-      versatilityOne, versatilityTwo,
-      pandrHandlerOne, pandrHandlerTwo,
-      pandrBigOne, pandrBigTwo,
-      postDefenseOne, postDefenseTwo,
-      rimProtectionOne, rimProtectionTwo
-    } = this.props
+    const { playerDataOne, playerDataTwo } = this.props
     return(
       <div className='card' style={{textAlign: 'center'}}>
         <div className='card-header'>
@@ -23,34 +16,34 @@ class Defense extends React.Component {
           <table>
             <tbody>
               <tr>
-                <td>{defensiveRebOne}</td>
+                <td>{playerDataOne.DefensiveRebounding}</td>
                 <td>Defensive Rebounding</td>
-                <td>{defensiveRebTwo}</td>
+                <td>{playerDataTwo.DefensiveRebounding}</td>
               </tr>
               <tr>
-                <td>{versatilityOne}</td>
+                <td>{playerDataOne.DefensiveVersatility}</td>
                 <td>Defensive Versatiltiy</td>
-                <td>{versatilityTwo}</td>
+                <td>{playerDataTwo.DefensiveVersatility}</td>
               </tr>
               <tr>
-                <td>{pandrHandlerOne}</td>
+                <td>{playerDataOne.DefPickAndRollHandler}</td>
                 <td>Pick and Roll Handler</td>
-                <td>{pandrHandlerTwo}</td>
+                <td>{playerDataTwo.DefPickAndRollhandler}</td>
               </tr>
               <tr>
-                <td>{pandrBigOne}</td>
+                <td>{playerDataOne.DefPickAndRollBig}</td>
                 <td>Pick and Roll Big</td>
-                <td>{pandrBigTwo}</td>
+                <td>{playerDataTwo.DefPickAndRollBig}</td>
               </tr>
               <tr>
-                <td>{postDefenseOne}</td>
+                <td>{playerDataOne.PostDefense}</td>
                 <td>Post Defense</td>
-                <td>{postDefenseTwo}</td>
+                <td>{playerDataTwo.PostDefense}</td>
               </tr>
               <tr>
-                <td>{rimProtectionOne}</td>
+                <td>{playerDataOne.RimProtection}</td>
                 <td>Rim Protection</td>
-                <td>{rimProtectionTwo}</td>
+                <td>{playerDataTwo.RimProtection}</td>
               </tr>
             </tbody>
           </table>

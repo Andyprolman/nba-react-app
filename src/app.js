@@ -12,7 +12,9 @@ class App extends React.Component {
           <div className='container'>
             <div className='row'>
               <div className='col-md-3'>
-                <PlayerOne />
+                <PlayerOne 
+                
+                />
               </div>
               <div className='col-md-6'>
                 <Comparison />

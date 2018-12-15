@@ -6,20 +6,8 @@ class Offense extends React.Component {
   }
 
   render() {
-    const { 
-      drivingOne, drivingTwo,
-      finishingOne, finishingTwo,
-      foulDrawingOne, foulDrawingTwo,
-      offensiveRebOne, offensiveRebTwo,
-      otmShootingOne, otmShootingTwo,
-      playmakingOne, playmakingTwo,
-      pandrHandlerOne, pandrHandlerTwo,
-      pandrBigOne, pandrBigTwo,
-      postScoringOne, postScoringTwo,
-      pullUpShootingOne, pullUpShootingTwo,
-      spacerOne, spacerTwo,
-      spotUpShootingOne, spotUpShootingTwo,
-     } = this.props;
+    const {
+      playerDataOne, playerDataTwo } = this.props;
     return (
       <div>
         <div className='card' style={{textAlign: 'center'}}>
@@ -31,64 +19,64 @@ class Offense extends React.Component {
               <table>
                 <tbody>
                   <tr>
-                    <td>{drivingOne}</td>
+                    <td>{playerDataOne.Driving}</td>
                     <td>Driving</td>
-                    <td>{drivingTwo}</td>
+                    <td>{playerDataTwo.Driving}</td>
                   </tr>
                   <tr>
-                    <td>{finishingOne}</td>
+                    <td>{playerDataOne.Finishing}</td>
                     <td>Finishing</td>
-                    <td>{finishingTwo}</td>
+                    <td>{playerDataTwo.Finishing}</td>
                   </tr>
                   <tr>
-                    <td>{foulDrawingOne}</td>
+                    <td>{playerDataOne.FoulDrawing}</td>
                     <td>Foul Drawing </td>
-                    <td>{foulDrawingTwo}</td>
+                    <td>{playerDataTwo.FoulDrawing}</td>
                   </tr>
                   <tr>
-                    <td>{offensiveRebOne}</td>
+                    <td>{playerDataOne.OffensiveRebounding}</td>
                     <td>Offensive Rebounding</td>
-                    <td>{offensiveRebTwo}</td>
+                    <td>{playerDataTwo.OffensiveRebounding}</td>
                   </tr>
                   <tr>
-                    <td>{otmShootingOne}</td>
+                    <td>{playerDataOne.OnTheMoveShooting}</td>
                     <td>On-The-Move Shooting</td>
-                    <td>{otmShootingTwo}</td>
+                    <td>{playerDataTwo.OnTheMoveShooting}</td>
                   </tr>
                   <tr>
-                    <td>{playmakingOne}</td>
+                    <td>{playerDataOne.Playmaking}</td>
                     <td>Playmaking</td>
-                    <td>{playmakingTwo}</td>
+                    <td>{playerDataTwo.Playmaking}</td>
                   </tr>
                   <tr>
-                    <td>{pandrHandlerOne}</td>
+                    <td>{playerDataOne.OffPickAndRollHandler}</td>
                     <td>Pick and Roll Handler</td>
-                    <td>{pandrHandlerTwo}</td>
+                    <td>{playerDataTwo.OffPickAndRollHandler}</td>
                   </tr>
                   <tr>
-                    <td>{pandrBigOne}</td>
+                    <td>{playerDataOne.OffPickAndRollBig}</td>
                     <td>Pick and Roll Big</td>
-                    <td>{pandrBigTwo}</td>
+                    <td>{playerDataTwo.OffPickAndRollBig}</td>
                   </tr>
                   <tr>
-                    <td>{postScoringOne}</td>
+                    <td>{playerDataOne.PostScoring}</td>
                     <td>Post Scoring</td>
-                    <td>{postScoringTwo}</td>
+                    <td>{playerDataTwo.PostScoring}</td>
                   </tr>
                   <tr>
-                    <td>{pullUpShootingOne}</td>
+                    <td>{playerDataOne.PullUpShooting}</td>
                     <td>Pull Up Shooting</td>
-                    <td>{pullUpShootingTwo}</td>
+                    <td>{playerDataTwo.PullUpShooting}</td>
                   </tr>
                   <tr>
-                    <td>{spacerOne}</td>
+                    <td>{playerDataOne.SpaceCreation}</td>
                     <td>Space Creator</td>
-                    <td>{spacerTwo}</td>
+                    <td>{playerDataTwo.SpaceCreation}</td>
                   </tr>
                   <tr>
-                    <td>{spotUpShootingOne}</td>
+                    <td>{playerDataOne.SpotUpShooting}</td>
                     <td>Spot Up Shooting</td>
-                    <td>{spotUpShootingTwo}</td>
+                    <td>{playerDataTwo.SpotUpShooting}</td>
                   </tr>
                 </tbody>
               </table>

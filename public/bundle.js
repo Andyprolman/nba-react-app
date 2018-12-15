@@ -26292,18 +26292,8 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var _this$props = this.props,
-          defensiveRebOne = _this$props.defensiveRebOne,
-          defensiveRebTwo = _this$props.defensiveRebTwo,
-          versatilityOne = _this$props.versatilityOne,
-          versatilityTwo = _this$props.versatilityTwo,
-          pandrHandlerOne = _this$props.pandrHandlerOne,
-          pandrHandlerTwo = _this$props.pandrHandlerTwo,
-          pandrBigOne = _this$props.pandrBigOne,
-          pandrBigTwo = _this$props.pandrBigTwo,
-          postDefenseOne = _this$props.postDefenseOne,
-          postDefenseTwo = _this$props.postDefenseTwo,
-          rimProtectionOne = _this$props.rimProtectionOne,
-          rimProtectionTwo = _this$props.rimProtectionTwo;
+          playerDataOne = _this$props.playerDataOne,
+          playerDataTwo = _this$props.playerDataTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         style: {
@@ -26313,7 +26303,7 @@ function (_React$Component) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Defense")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, defensiveRebOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, defensiveRebTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, versatilityOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Versatiltiy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, versatilityTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postDefenseOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Defense"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postDefenseTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rimProtectionOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Rim Protection"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rimProtectionTwo))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.DefensiveRebounding), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.DefensiveRebounding)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.DefensiveVersatility), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Defensive Versatiltiy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.DefensiveVersatility)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.DefPickAndRollHandler), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.DefPickAndRollhandler)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.DefPickAndRollBig), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.DefPickAndRollBig)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PostDefense), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Defense"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PostDefense)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.RimProtection), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Rim Protection"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.RimProtection))))));
     }
   }]);
 
@@ -26340,18 +26330,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function mapStateToProps(store) {
   return {
-    defensiveRebOne: store.playerOne.defense.defensiveReb,
-    defensiveRebTwo: store.playerTwo.defense.defensiveReb,
-    versatilityOne: store.playerOne.defense.versatility,
-    versatilityTwo: store.playerTwo.defense.versatility,
-    pandrHandlerOne: store.playerOne.defense.pandrHandler,
-    pandrHandlerTwo: store.playerTwo.defense.pandrHandler,
-    pandrBigOne: store.playerOne.defense.pandrBig,
-    pandrBigTwo: store.playerTwo.defense.pandrBig,
-    postDefenseOne: store.playerOne.defense.postDefense,
-    postDefenseTwo: store.playerTwo.defense.postDefense,
-    rimProtectionOne: store.playerOne.defense.rimProtection,
-    rimProtectionTwo: store.playerTwo.defense.rimProtection
+    playerDataOne: store.playerOne.playerData,
+    playerDataTwo: store.playerTwo.playerData
   };
 }
 
@@ -26468,30 +26448,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function mapStateToProps(store) {
   return {
-    drivingOne: store.playerOne.offense.driving,
-    drivingTwo: store.playerTwo.offense.driving,
-    finishingOne: store.playerOne.offense.finishing,
-    finishingTwo: store.playerTwo.offense.finishing,
-    foulDrawingOne: store.playerOne.offense.foulDrawing,
-    foulDrawingTwo: store.playerTwo.offense.foulDrawing,
-    offensiveRebOne: store.playerOne.offense.offensiveReb,
-    offensiveRebTwo: store.playerTwo.offense.offensiveReb,
-    otmShootingOne: store.playerOne.offense.otmShooting,
-    otmShootingTwo: store.playerTwo.offense.otmShooting,
-    playmakingOne: store.playerOne.offense.playmaking,
-    playmakingTwo: store.playerTwo.offense.playmaking,
-    pandrHandlerOne: store.playerOne.offense.pandrHandler,
-    pandrHandlerTwo: store.playerTwo.offense.pandrHandler,
-    pandrBigOne: store.playerOne.offense.pandrBig,
-    pandrBigTwo: store.playerTwo.offense.pandrBig,
-    postScoringOne: store.playerOne.offense.postScoring,
-    postScoringTwo: store.playerTwo.offense.postScoring,
-    pullUpShootingOne: store.playerOne.offense.pullUpShooting,
-    pullUpShootingTwo: store.playerTwo.offense.pullUpShooting,
-    spacerOne: store.playerOne.offense.spacer,
-    spacerTwo: store.playerTwo.offense.spacer,
-    spotUpShootingOne: store.playerOne.offense.spotUpShooting,
-    spotUpShootingTwo: store.playerTwo.offense.spotUpShooting
+    playerDataOne: store.playerOne.playerData,
+    playerDataTwo: store.playerTwo.playerData
   };
 }
 
@@ -26545,30 +26503,8 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var _this$props = this.props,
-          drivingOne = _this$props.drivingOne,
-          drivingTwo = _this$props.drivingTwo,
-          finishingOne = _this$props.finishingOne,
-          finishingTwo = _this$props.finishingTwo,
-          foulDrawingOne = _this$props.foulDrawingOne,
-          foulDrawingTwo = _this$props.foulDrawingTwo,
-          offensiveRebOne = _this$props.offensiveRebOne,
-          offensiveRebTwo = _this$props.offensiveRebTwo,
-          otmShootingOne = _this$props.otmShootingOne,
-          otmShootingTwo = _this$props.otmShootingTwo,
-          playmakingOne = _this$props.playmakingOne,
-          playmakingTwo = _this$props.playmakingTwo,
-          pandrHandlerOne = _this$props.pandrHandlerOne,
-          pandrHandlerTwo = _this$props.pandrHandlerTwo,
-          pandrBigOne = _this$props.pandrBigOne,
-          pandrBigTwo = _this$props.pandrBigTwo,
-          postScoringOne = _this$props.postScoringOne,
-          postScoringTwo = _this$props.postScoringTwo,
-          pullUpShootingOne = _this$props.pullUpShootingOne,
-          pullUpShootingTwo = _this$props.pullUpShootingTwo,
-          spacerOne = _this$props.spacerOne,
-          spacerTwo = _this$props.spacerTwo,
-          spotUpShootingOne = _this$props.spotUpShootingOne,
-          spotUpShootingTwo = _this$props.spotUpShootingTwo;
+          playerDataOne = _this$props.playerDataOne,
+          playerDataTwo = _this$props.playerDataTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         style: {
@@ -26578,7 +26514,7 @@ function (_React$Component) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Offense")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, drivingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Finishing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, finishingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Foul Drawing "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, foulDrawingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offensiveRebTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, otmShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playmakingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrHandlerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pandrBigTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, postScoringTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, pullUpShootingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spacerTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, spotUpShootingTwo))))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Driving), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Driving"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Driving)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Finishing), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Finishing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Finishing)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.FoulDrawing), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Foul Drawing "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.FoulDrawing)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffensiveRebounding), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffensiveRebounding)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OnTheMoveShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OnTheMoveShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Playmaking), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Playmaking)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollHandler), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollHandler)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollBig), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollBig)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PostScoring), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PostScoring)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PullUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PullUpShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpaceCreation), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpaceCreation)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpotUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpotUpShooting))))))));
     }
   }]);
 
@@ -26699,11 +26635,7 @@ __webpack_require__.r(__webpack_exports__);
 function mapStateToProps(store) {
   return {
     playerOne: store.playerOne.playerOne,
-    playerDataOne: store.playerOne.playerData,
-    team: store.playerOne.team,
-    age: store.playerOne.age,
-    contract: store.playerOne.contract,
-    agent: store.playerOne.agent
+    playerDataOne: store.playerOne.playerData
   };
 }
 
@@ -26772,7 +26704,7 @@ function (_React$Component) {
     value: function render() {
       var playerDataOne = this.props.playerDataOne;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
+        className: "card player"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Player One"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
@@ -26943,11 +26875,7 @@ __webpack_require__.r(__webpack_exports__);
 function mapStateToProps(store) {
   return {
     playerDataTwo: store.playerTwo.playerData,
-    playerTwo: store.playerTwo.playerTwo,
-    team: store.playerTwo.team,
-    age: store.playerTwo.age,
-    contract: store.playerTwo.contract,
-    agent: store.playerTwo.agent
+    playerTwo: store.playerTwo.playerTwo
   };
 }
 
@@ -27016,7 +26944,7 @@ function (_React$Component) {
     value: function render() {
       var playerDataTwo = this.props.playerDataTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
+        className: "card player"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " Player Two"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {

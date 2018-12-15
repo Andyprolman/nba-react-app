@@ -20,7 +20,7 @@ class PlayerTwo extends React.Component {
     const { playerDataTwo } = this.props;
     return (
       <div>
-        <div className='card'>
+        <div className='card player'>
           <div className='card-header'>
             <h4> Player Two</h4>
             <select onChange={this.selectPlayerTwo}>
