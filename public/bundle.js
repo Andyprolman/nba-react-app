@@ -26196,6 +26196,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Offense__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Offense */ "./src/components/Offense/index.js");
 /* harmony import */ var _Defense__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Defense */ "./src/components/Defense/index.js");
 /* harmony import */ var _Mental__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Mental */ "./src/components/Mental/index.js");
+/* harmony import */ var _Physical__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Physical */ "./src/components/Physical/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26219,6 +26220,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Comparison =
 /*#__PURE__*/
 function (_React$Component) {
@@ -26233,7 +26235,7 @@ function (_React$Component) {
   _createClass(Comparison, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Offense__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Defense__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Mental__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Offense__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Defense__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Mental__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Physical__WEBPACK_IMPORTED_MODULE_4__["default"], null));
     }
   }]);
 
@@ -26373,14 +26375,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function mapStateToProps(store) {
   return {
-    decisionMakingOne: store.playerOne.mental.decisionMaking,
-    decisionMakingTwo: store.playerTwo.mental.decisionMaking,
-    offBallMovementOne: store.playerOne.mental.offBallMovement,
-    offBallMovementTwo: store.playerTwo.mental.offBallMovement,
-    positioningOne: store.playerOne.mental.positioning,
-    positioningTwo: store.playerTwo.mental.positioning,
-    rotationsOne: store.playerOne.mental.rotations,
-    rotationsTwo: store.playerTwo.mental.rotations
+    playerDataOne: store.playerOne.playerData,
+    playerDataTwo: store.playerTwo.playerData
   };
 }
 
@@ -26434,15 +26430,8 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var _this$props = this.props,
-          decisionMakingOne = _this$props.decisionMakingOne,
-          decisionMakingTwo = _this$props.decisionMakingTwo,
-          offBallMovementOne = _this$props.offBallMovementOne,
-          offBallMovementTwo = _this$props.offBallMovementTwo,
-          positioningOne = _this$props.positioningOne,
-          positioningTwo = _this$props.positioningTwo,
-          rotationsOne = _this$props.rotationsOne,
-          rotationsTwo = _this$props.rotationsTwo;
-      console.log(decisionMakingOne);
+          playerDataOne = _this$props.playerDataOne,
+          playerDataTwo = _this$props.playerDataTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         style: {
@@ -26452,7 +26441,7 @@ function (_React$Component) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Mental")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, decisionMakingOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Decision Making"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, decisionMakingTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offBallMovementOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Off-Ball Movement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, offBallMovementTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, positioningOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Positioning"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, positioningTwo)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rotationsOne), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Rotations"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, rotationsTwo))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.DecisionMaking), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Decision Making"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.DecisionMaking)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffBallMovement), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Off-Ball Movement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffBallMovement)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Positioning), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Positioning"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Positioning)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Rotations), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Rotations"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Rotations))))));
     }
   }]);
 
@@ -26600,6 +26589,99 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/components/Physical/index.js":
+/*!******************************************!*\
+  !*** ./src/components/Physical/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _physical__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./physical */ "./src/components/Physical/physical.js");
+
+
+
+function mapStateToProps(store) {
+  return {
+    playerDataOne: store.playerOne.playerData,
+    playerDataTwo: store.playerTwo.playerData
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps)(_physical__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/Physical/physical.js":
+/*!*********************************************!*\
+  !*** ./src/components/Physical/physical.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Physical =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Physical, _React$Component);
+
+  function Physical(props) {
+    _classCallCheck(this, Physical);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Physical).call(this, props));
+  }
+
+  _createClass(Physical, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          playerDataOne = _this$props.playerDataOne,
+          playerDataTwo = _this$props.playerDataTwo;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card",
+        style: {
+          textAlign: 'center'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Physical")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Burst), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Burst"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Burst)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.LateralQuickness), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Lateral Quickness"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.LateralQuickness)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Motor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Motor"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Motor)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Speed), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Speed"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Speed)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Strength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Strength"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Strength)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.VerticalExplosiveness), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Vertical Explosiveness"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.VerticalExplosiveness))))));
+    }
+  }]);
+
+  return Physical;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Physical);
+
+/***/ }),
+
 /***/ "./src/components/PlayerOne/index.js":
 /*!*******************************************!*\
   !*** ./src/components/PlayerOne/index.js ***!
@@ -26617,6 +26699,7 @@ __webpack_require__.r(__webpack_exports__);
 function mapStateToProps(store) {
   return {
     playerOne: store.playerOne.playerOne,
+    playerDataOne: store.playerOne.playerData,
     team: store.playerOne.team,
     age: store.playerOne.age,
     contract: store.playerOne.contract,
@@ -26687,11 +26770,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          team = _this$props.team,
-          age = _this$props.age,
-          contract = _this$props.contract,
-          agent = _this$props.agent;
+      var playerDataOne = this.props.playerDataOne;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -26704,7 +26783,7 @@ function (_React$Component) {
         }, player.Player);
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", age)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", contract)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", agent)))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", playerDataOne.Team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", playerDataOne.Age)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", playerDataOne.Contract)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", playerDataOne.Agent)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Height: ", playerDataOne.Height)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Weight: ", playerDataOne.Weight)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Wingspan: ", playerDataOne.Wingspan)))))));
     }
   }]);
 
@@ -26750,6 +26829,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var json = __webpack_require__(/*! ./src/playerData.json */ "./src/playerData.json");
 
 var initialState = {
+  playerData: '',
   playerOne: '',
   team: '',
   age: '',
@@ -26798,7 +26878,8 @@ var playerOneReducer = function playerOneReducer() {
           return item.Player == payload;
         });
         return _objectSpread({}, state, {
-          playerOne: payload,
+          playerData: json[index],
+          playerOne: json[index].Player,
           team: json[index].Team,
           age: json[index].Age,
           contract: json[index].Contract,
@@ -26861,6 +26942,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function mapStateToProps(store) {
   return {
+    playerDataTwo: store.playerTwo.playerData,
     playerTwo: store.playerTwo.playerTwo,
     team: store.playerTwo.team,
     age: store.playerTwo.age,
@@ -26932,12 +27014,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          playerTwo = _this$props.playerTwo,
-          team = _this$props.team,
-          age = _this$props.age,
-          contract = _this$props.contract,
-          agent = _this$props.agent;
+      var playerDataTwo = this.props.playerDataTwo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -26950,7 +27027,7 @@ function (_React$Component) {
         }, player.Player);
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", age, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", contract, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", agent, " ")))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Team: ", playerDataTwo.Team, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Age: ", playerDataTwo.Age, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Contract: ", playerDataTwo.Contract, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Agent: ", playerDataTwo.Agent, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Height: ", playerDataTwo.Height)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Weight: ", playerDataTwo.Weight)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Wingspan: ", playerDataTwo.Wingspan)))))));
     }
   }]);
 
@@ -26997,6 +27074,7 @@ var json = __webpack_require__(/*! ./src/playerData.json */ "./src/playerData.js
 
 var initialState = {
   playerTwo: '',
+  playerData: '',
   team: '',
   age: '',
   contract: '',
@@ -27044,7 +27122,8 @@ var playerTwoReducer = function playerTwoReducer() {
           return item.Player == payload;
         });
         return _objectSpread({}, state, {
-          playerTwo: payload,
+          playerData: json[index],
+          playerTwo: json[index].Player,
           team: json[index].Team,
           age: json[index].Age,
           contract: json[index].Contract,

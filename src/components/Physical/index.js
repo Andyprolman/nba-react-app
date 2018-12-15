@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Mental from './mental';
+import Physical from './physical';
 
 function mapStateToProps(store) {
   return {
@@ -8,4 +8,4 @@ function mapStateToProps(store) {
   }
 }
 
-export default connect(mapStateToProps)(Mental)
+export default connect(mapStateToProps)(Physical);

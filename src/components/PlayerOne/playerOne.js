@@ -16,7 +16,7 @@ class PlayerOne extends React.Component {
   }
 
   render() {
-    const { team, age, contract, agent } = this.props;
+    const { playerDataOne } = this.props;
     return (
       <div>
         <div className='card'>
@@ -33,16 +33,25 @@ class PlayerOne extends React.Component {
             <table>
               <tbody>
                 <tr>
-                  <td>Team: {team} </td>
+                  <td>Team: {playerDataOne.Team} </td>
                 </tr>
                 <tr>
-                  <td>Age: {age}</td>
+                  <td>Age: {playerDataOne.Age}</td>
                 </tr>
                 <tr>
-                  <td>Contract: {contract}</td>
+                  <td>Contract: {playerDataOne.Contract}</td>
                 </tr>
                 <tr>
-                  <td>Agent: {agent}</td>
+                  <td>Agent: {playerDataOne.Agent}</td>
+                </tr>
+                <tr>
+                  <td>Height: {playerDataOne.Height}</td>
+                </tr>
+                <tr>
+                  <td>Weight: {playerDataOne.Weight}</td>
+                </tr>
+                <tr>
+                  <td>Wingspan: {playerDataOne.Wingspan}</td>
                 </tr>
               </tbody>
             </table>

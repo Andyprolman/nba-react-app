@@ -6,14 +6,7 @@ class Mental extends React.Component {
   }
 
   render() {
-    const { 
-      decisionMakingOne, decisionMakingTwo,
-      offBallMovementOne, offBallMovementTwo,
-      positioningOne, positioningTwo,
-      rotationsOne, rotationsTwo
-    } = this.props;
-
-    console.log(decisionMakingOne)
+    const { playerDataOne, playerDataTwo } = this.props;
     return (
       <div className='card' style={{ textAlign: 'center' }}>
         <div className='card-header'>
@@ -23,24 +16,24 @@ class Mental extends React.Component {
           <table>
             <tbody>
               <tr>
-                <td>{decisionMakingOne}</td>
+                <td>{playerDataOne.DecisionMaking}</td>
                 <td>Decision Making</td>
-                <td>{decisionMakingTwo}</td>
+                <td>{playerDataTwo.DecisionMaking}</td>
               </tr>
               <tr>
-                <td>{offBallMovementOne}</td>
+                <td>{playerDataOne.OffBallMovement}</td>
                 <td>Off-Ball Movement</td>
-                <td>{offBallMovementTwo}</td>
+                <td>{playerDataTwo.OffBallMovement}</td>
               </tr>
               <tr>
-                <td>{positioningOne}</td>
+                <td>{playerDataOne.Positioning}</td>
                 <td>Positioning</td>
-                <td>{positioningTwo}</td>
+                <td>{playerDataTwo.Positioning}</td>
               </tr>
               <tr>
-                <td>{rotationsOne}</td>
+                <td>{playerDataOne.Rotations}</td>
                 <td>Rotations</td>
-                <td>{rotationsTwo}</td>
+                <td>{playerDataTwo.Rotations}</td>
               </tr>
             </tbody>
           </table>

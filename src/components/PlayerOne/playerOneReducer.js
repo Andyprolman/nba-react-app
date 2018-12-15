@@ -2,6 +2,7 @@ const json = require('/Users/andrew/nba-react-app/src/playerData.json');
 
 
 const initialState = {
+  playerData: '',
   playerOne: '',
   team: '',
   age: '',
@@ -48,7 +49,8 @@ const playerOneReducer = (state = initialState, action) => {
         })
       return {
         ...state,
-        playerOne: payload,
+        playerData: json[index],
+        playerOne: json[index].Player,
         team: json[index].Team,
         age: json[index].Age,
         contract: json[index].Contract,
