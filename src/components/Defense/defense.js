@@ -28,7 +28,7 @@ class Defense extends React.Component {
               <tr>
                 <td>{playerDataOne.DefPickAndRollHandler}</td>
                 <td>Pick and Roll Handler</td>
-                <td>{playerDataTwo.DefPickAndRollhandler}</td>
+                <td>{playerDataTwo.DefPickAndRollHandler}</td>
               </tr>
               <tr>
                 <td>{playerDataOne.DefPickAndRollBig}</td>
