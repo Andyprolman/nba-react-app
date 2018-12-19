@@ -10,6 +10,9 @@ class App extends React.Component {
       return (
         <Provider store={store}>
           <div className='container'>
+            <div>
+              <h1 style={{textAlign: 'center'}}>NBA Player Comparison</h1>
+            </div>
             <div className='row'>
               <div className='col-md-3'>
                 <PlayerOne 
