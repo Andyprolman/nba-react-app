@@ -10,3 +10,7 @@ table{
 body{
     background: gray;
 }
+tr td:nth-child { 
+    text-align: right;
+ }
+ 
