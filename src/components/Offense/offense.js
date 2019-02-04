@@ -49,7 +49,7 @@ class Offense extends React.Component {
                     <td>{playerDataTwo.Finishing}</td>
                   </tr>
                   <tr>
-                  <td>
+                    <td>
                       <div className='progress'>
                         <div className='progress-bar' role='progressbar'  style={{width: playerDataOne.FoulDrawing/25*100}} aria-valuenow={playerDataOne.FoulDrawing/25*100} aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
@@ -64,8 +64,18 @@ class Offense extends React.Component {
                     <td>{playerDataTwo.FoulDrawing}</td>
                   </tr>
                   <tr>
+                    <td>
+                      <div className='progress'>
+                        <div className='progress-bar' role='progressbar'  style={{width: playerDataOne.OffensiveRebounding/25*100}} aria-valuenow={playerDataOne.OffensiveRebounding/25*100} aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
                     <td>{playerDataOne.OffensiveRebounding}</td>
                     <td>Offensive Rebounding</td>
+                    <td>
+                      <div className='progress'>
+                        <div className='progress-bar' role='progressbar' style={{width: playerDataTwo.OffensiveRebounding/25*100}} aria-valuenow={playerDataTwo.OffensiveRebounding/25*100} aria-valuenow={playerDataTwo.Driving} aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
                     <td>{playerDataTwo.OffensiveRebounding}</td>
                   </tr>
                   <tr>
