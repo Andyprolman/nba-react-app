@@ -26508,7 +26508,7 @@ function (_React$Component) {
   _createClass(Offense, [{
     key: "render",
     value: function render() {
-      var _React$createElement, _React$createElement2, _React$createElement3;
+      var _React$createElement, _React$createElement2, _React$createElement3, _React$createElement4, _React$createElement5;
 
       var _this$props = this.props,
           playerDataOne = _this$props.playerDataOne,
@@ -26582,7 +26582,47 @@ function (_React$Component) {
           width: playerDataTwo.FoulDrawing / 25 * 100
         },
         "aria-valuenow": playerDataTwo.FoulDrawing / 25 * 100
-      }, _defineProperty(_React$createElement3, "aria-valuenow", playerDataTwo.Driving), _defineProperty(_React$createElement3, "aria-valuemin", "0"), _defineProperty(_React$createElement3, "aria-valuemax", "100"), _React$createElement3)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.FoulDrawing)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffensiveRebounding), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffensiveRebounding)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OnTheMoveShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OnTheMoveShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Playmaking), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Playmaking)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollHandler), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollHandler)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollBig), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollBig)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PostScoring), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PostScoring)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PullUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PullUpShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpaceCreation), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpaceCreation)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpotUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpotUpShooting))))))));
+      }, _defineProperty(_React$createElement3, "aria-valuenow", playerDataTwo.Driving), _defineProperty(_React$createElement3, "aria-valuemin", "0"), _defineProperty(_React$createElement3, "aria-valuemax", "100"), _React$createElement3)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.FoulDrawing)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-bar",
+        role: "progressbar",
+        style: {
+          width: playerDataOne.OffensiveRebounding / 25 * 100
+        },
+        "aria-valuenow": playerDataOne.OffensiveRebounding / 25 * 100,
+        "aria-valuemin": "0",
+        "aria-valuemax": "100"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffensiveRebounding), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Offensive Rebounding"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", (_React$createElement4 = {
+        className: "progress-bar",
+        role: "progressbar",
+        style: {
+          width: playerDataTwo.OffensiveRebounding / 25 * 100
+        },
+        "aria-valuenow": playerDataTwo.OffensiveRebounding / 25 * 100
+      }, _defineProperty(_React$createElement4, "aria-valuenow", playerDataTwo.Driving), _defineProperty(_React$createElement4, "aria-valuemin", "0"), _defineProperty(_React$createElement4, "aria-valuemax", "100"), _React$createElement4)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffensiveRebounding)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-bar",
+        role: "progressbar",
+        style: {
+          width: playerDataOne.OnTheMoveShooting / 25 * 100
+        },
+        "aria-valuenow": playerDataOne.OnTheMoveShooting / 25 * 100,
+        "aria-valuemin": "0",
+        "aria-valuemax": "100"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OnTheMoveShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "On-The-Move Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", (_React$createElement5 = {
+        className: "progress-bar",
+        role: "progressbar",
+        style: {
+          width: playerDataTwo.OnTheMoveShooting / 25 * 100
+        },
+        "aria-valuenow": playerDataTwo.OnTheMoveShooting / 25 * 100
+      }, _defineProperty(_React$createElement5, "aria-valuenow", playerDataTwo.Driving), _defineProperty(_React$createElement5, "aria-valuemin", "0"), _defineProperty(_React$createElement5, "aria-valuemax", "100"), _React$createElement5))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OnTheMoveShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.Playmaking), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Playmaking"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.Playmaking)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollHandler), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Handler"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollHandler)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.OffPickAndRollBig), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pick and Roll Big"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.OffPickAndRollBig)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PostScoring), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post Scoring"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PostScoring)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.PullUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Pull Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.PullUpShooting)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpaceCreation), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Space Creator"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpaceCreation)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataOne.SpotUpShooting), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Spot Up Shooting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, playerDataTwo.SpotUpShooting))))))));
     }
   }]);
 
