@@ -33,25 +33,25 @@ class PlayerOne extends React.Component {
             <table>
               <tbody>
                 <tr>
-                  <td>Team: {playerDataOne.Team} </td>
+                  <td><b>Team:</b> {playerDataOne.Team} </td>
                 </tr>
                 <tr>
-                  <td>Age: {playerDataOne.Age}</td>
+                  <td><b>Age:</b> {playerDataOne.Age}</td>
                 </tr>
                 <tr>
-                  <td>Contract: {playerDataOne.Contract}</td>
+                  <td><b>Contract:</b> {playerDataOne.Contract}</td>
                 </tr>
                 <tr>
-                  <td>Agent: {playerDataOne.Agent}</td>
+                  <td><b>Agent:</b> {playerDataOne.Agent}</td>
                 </tr>
                 <tr>
-                  <td>Height: {playerDataOne.Height}</td>
+                  <td><b>Height: </b>{playerDataOne.Height}</td>
                 </tr>
                 <tr>
-                  <td>Weight: {playerDataOne.Weight}</td>
+                  <td><b>Weight:</b> {playerDataOne.Weight}</td>
                 </tr>
                 <tr>
-                  <td>Wingspan: {playerDataOne.Wingspan}</td>
+                  <td><b>Wingspan: </b>{playerDataOne.Wingspan}</td>
                 </tr>
               </tbody>
             </table>

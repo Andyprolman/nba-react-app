@@ -81,13 +81,13 @@ class Offense extends React.Component {
                   <tr>
                     <td>
                       <div className='progress'>
-                        <div className='progress-bar' role='progressbar'  style={{width: playerDataOne.OnTheMoveShooting/25*100}} aria-valuenow={playerDataOne.OnTheMoveShooting/25*100} aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className='progress-bar' role='progressbar'  style={{width: '100%'}} aria-valuenow={playerDataOne.OnTheMoveShooting/25*100} aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </td>
                     <td>{playerDataOne.OnTheMoveShooting}</td>
                     <td>On-The-Move Shooting</td>
                       <div className='progress'>
-                        <div className='progress-bar' role='progressbar' style={{width: playerDataTwo.OnTheMoveShooting/25*100}} aria-valuenow={playerDataTwo.OnTheMoveShooting/25*100} aria-valuenow={playerDataTwo.Driving} aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className='progress-bar' role='progressbar' style={{width: '100%'}} aria-valuenow={playerDataTwo.OnTheMoveShooting/25*100} aria-valuenow={playerDataTwo.Driving} aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     <td>{playerDataTwo.OnTheMoveShooting}</td>
                   </tr>
